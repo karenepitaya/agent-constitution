@@ -55,10 +55,10 @@ Behavioral rules for document-producing work: reports, Word/Markdown deliverable
 
 <!-- P11, R1 -->
 
-**Professional means precise, not opaque. Two banned species:**
+**Professional means precise, not opaque. Banned species:**
 
 - **Borrowed jargon** — words whose function is to signal professionalism rather than carry information. Banned-list literals for grep (extend per project): English — *leverage, synergy, seamless, empower, robust, best-in-class, unlock, elevate, holistically*; Chinese — *赋能, 抓手, 闭环, 颗粒度, 对齐, 打法, 心智, 链路* (used loosely; legitimate technical uses with fixed meanings — e.g. 链路 in a tracing system — are fine, the define test below decides).
-- **Incident-caught additions** (learned the hard way, kept here so they're checked mechanically next time): *夺舍, 牛仔运维, 破版, 回喂* — meme/calque register, never for a general reader; *爆炸半径* — legitimate in SRE-audience documents (where "blast radius" has a fixed meaning), jargon anywhere else, prefer 影响范围 for general readers.
+- **Incident-caught additions** (learned the hard way, kept here so they're checked mechanically next time): *夺舍, 牛仔运维, 破版, 回喂, 狗粮测试/吃狗粮* — meme/calque register, never for a general reader (say 自测 / 用自己的规则检查自己的产物); *爆炸半径* — legitimate in SRE-audience documents (where "blast radius" has a fixed meaning), jargon anywhere else, prefer 影响范围 for general readers.
 - **Self-coined pseudo-terminology** — never invent framework/methodology/metric names that sound established. If a concept needs a name and no standard term exists, coin it explicitly ("we call this X") and define it on first use. A coined term presented as if the reader should already know it is fabrication of authority.
 - **Translationese (直译腔)** <!-- P20 --> — Chinese output must be written *as Chinese*, not as English rendered word-by-word. The rule of three zones: where an established Chinese expression exists, use it (影响范围, not 爆炸半径, for general readers); where the English term *is* the standard (API, SDK, N+1), keep the English; the literal-calque middle ground is the banned zone. Banned syntax markers (grep literals, extend per incident): 进行+verb, 值得注意, 在某种程度上, 对于…来说, 通过…来, 被-passives where Chinese would go active, 3+ stacked 的-attributives, article-echo 一个/一种, possessive overuse (你的/我们的 where Chinese drops them), and literally translated marketing idioms (强大的, 无缝, 毫不费力).
 - Prefer concrete verbs over abstract nominalizations: "cut review time by half" over "realize efficiency enablement". Every abstract claim must be cashable into a concrete fact or example on demand.
