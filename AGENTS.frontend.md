@@ -47,7 +47,7 @@ Behavioral rules for all page-producing work: web apps, HTML pages, prototypes, 
 
 **Latin type metrics do not transfer to CJK. This section is non-negotiable defaults, amendable only via `DESIGN.md`.**
 
-- Font stacks must explicitly include CJK families: `-apple-system, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif` (or the project's `DESIGN.md` stack). A bare `serif` or `sans-serif` generic family is forbidden — it silently maps Chinese text to SimSun-class (宋体-class) rendering, which reads as dated and renders poorly at small sizes.
+- Font stacks must explicitly include CJK families, with the concrete stack named once in the project's `DESIGN.md` (see `DESIGN.template.md` §4 for the example). A bare `serif` or `sans-serif` generic family is forbidden — it silently maps Chinese text to SimSun-class (宋体-class) rendering, which reads as dated and renders poorly at small sizes.
 - Body text: minimum 15px, recommended 16px. Line-height for CJK: minimum 1.6. Captions never below 12px.
 - Serif/display type for Chinese headings only if `DESIGN.md` says so, with the CJK family named explicitly — never via generic fallback.
 - When a design reference is in English, translate its type metrics for CJK: size +1~2px, line-height +0.1~0.2, letter-spacing reset to 0 for Chinese runs.
