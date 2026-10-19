@@ -58,6 +58,7 @@ Behavioral rules for document-producing work: reports, Word/Markdown deliverable
 **Professional means precise, not opaque. Two banned species:**
 
 - **Borrowed jargon** — words whose function is to signal professionalism rather than carry information. Banned-list literals for grep (extend per project): English — *leverage, synergy, seamless, empower, robust, best-in-class, unlock, elevate, holistically*; Chinese — *赋能, 抓手, 闭环, 颗粒度, 对齐, 打法, 心智, 链路* (used loosely; legitimate technical uses with fixed meanings — e.g. 链路 in a tracing system — are fine, the define test below decides).
+- **Incident-caught additions** (learned the hard way, kept here so they're checked mechanically next time): *夺舍, 牛仔运维, 破版, 回喂* — meme/calque register, never for a general reader; *爆炸半径* — legitimate in SRE-audience documents (where "blast radius" has a fixed meaning), jargon anywhere else, prefer 影响范围 for general readers.
 - **Self-coined pseudo-terminology** — never invent framework/methodology/metric names that sound established. If a concept needs a name and no standard term exists, coin it explicitly ("we call this X") and define it on first use. A coined term presented as if the reader should already know it is fabrication of authority.
 - Prefer concrete verbs over abstract nominalizations: "cut review time by half" over "realize efficiency enablement". Every abstract claim must be cashable into a concrete fact or example on demand.
 - Adjectives and adverbs carry a burden of proof: if deleting one loses no information, delete it.
