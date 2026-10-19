@@ -2,7 +2,7 @@
 
 Behavioral rules for all agent work. Derived from Andrej Karpathy's observations on LLM coding pitfalls. Biases toward caution over speed.
 
-**Scope:** applies to every task. Scenario constitutions (`AGENTS.backend.md`, `AGENTS.frontend.md`, `AGENTS.office.md`) extend this file, never repeal it. Project-specific tooling and environment rules live in the project's own files, not here.
+**Scope:** applies to every task. Scenario constitutions (`AGENTS.backend.md`, `AGENTS.frontend.md`, `AGENTS.office.md`, `AGENTS.testing.md`, `AGENTS.ops.md`) extend this file, never repeal it. Project-specific tooling and environment rules live in the project's own files, not here.
 
 ## 1. Think Before Coding
 
