@@ -79,6 +79,7 @@ Behavioral rules for all page-producing work: web apps, HTML pages, prototypes, 
 - Never finalize layout against placeholder copy. If real content exists, use it. If it doesn't, ask for it — or use realistic worst-case content (longest plausible strings, realistic data volume), never conveniently short lorem ipsum.
 - Fake data must look like real data's worst day: uneven lengths, missing fields, long names. Three identical-length testimonials is a lie that designs the wrong layout.
 - Marketing buzzwords are forbidden in product UI (e.g. "empower", "unlock infinite possibilities", "seamless one-stop"; Chinese equivalents: 赋能, 释放无限可能, 一站式). If copy is needed, write what the element actually does.
+- Chinese UI copy follows `AGENTS.office.md` §4, including its translationese rules <!-- P20 --> — a button that says 强大的新功能 is the same violation as a report that says it.
 
 **The test:** replace any region's content with the real longest variant. If the layout breaks or the change reveals the copy was load-bearing, the layout was never finished.
 

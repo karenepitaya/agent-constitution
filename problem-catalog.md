@@ -20,7 +20,7 @@ Conversation is the model's only expressive medium, so every step in its head ri
 **Corollary:** channel separation (what enters the artifact vs. what stays in conversation) cannot be self-enforced by the model. Rules must hold the line.
 
 ### R4 — English Prior
-Its knowledge of font stacks, type metrics, and design trends is almost entirely Latin/English-context. Chinese is passively reached through fallback, so fonts, sizes, line-heights, and line-breaking all arrive mismatched.
+Its knowledge of font stacks, type metrics, and design trends is almost entirely Latin/English-context. Chinese is passively reached through fallback, so fonts, sizes, line-heights, and line-breaking all arrive mismatched. The same prior also produces translationese (P20): concepts formed in English are rendered word-by-word into Chinese instead of being re-expressed natively.
 **Corollary:** this is the easiest class to eliminate with hard constraints — it's a parameter error, not a taste problem.
 
 ---
@@ -124,6 +124,11 @@ Its knowledge of font stacks, type metrics, and design trends is almost entirely
 **Mechanism:** R3. The conversation is the model's whole world; its register bleeds into the artifact. Distinct from P7 (quantity of words) and P8 (revision history) — this is a *tone* contamination.
 **Detection:** the third-party-reader pass — flag every phrase whose meaning depends on having been in the conversation; after each incident, add the caught words to the project's jargon grep list.
 
+### P20 — Translationese (直译腔)
+**Symptoms:** Chinese output whose syntax betrays an English source, even when word choice is innocent: calques (爆炸半径 for "blast radius"); passive-voice overuse (被设计用来); stacked 的-attributives ("一个被广泛用于构建现代应用的框架"); 进行+verb (进行分析 instead of 分析); article-echo (一个/一种 for every English a/an); possessive overuse (你的/我们的 where Chinese drops them); English marketing idioms rendered literally (强大的, 无缝, 毫不费力).
+**Mechanism:** R4. Concepts are formed in English and rendered word-by-word into Chinese instead of being re-expressed natively. Distinct from P11: P11 is word *choice* for signaling professionalism; P20 is *syntax and phrasing* leaking from English regardless of intent.
+**Detection:** marker grep (进行, 值得注意, 在某种程度上, 对于…来说, 通过…来, 3+ 的-chains, 你的/我们的 density); the translate-back test — if the English original is audible behind the Chinese sentence, rewrite it; the native read-aloud test for anything gray.
+
 ---
 
 ## 3. Root Cause × Problem Matrix
@@ -149,6 +154,7 @@ Its knowledge of font stacks, type metrics, and design trends is almost entirely
 | P17 secrets exposure | R1, R3 | Yes (grep + incident rule) |
 | P18 compliance theater | R2 | Yes (raw-output evidence rule) |
 | P19 register leak | R3 | Mostly (third-party-reader pass + incident-driven grep list) |
+| P20 translationese | R4 | Mostly (marker grep + translate-back test; native read-aloud stays human) |
 
 ---
 
