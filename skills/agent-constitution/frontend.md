@@ -7,7 +7,7 @@ UI, pages, HTML, prototypes, slides. You cannot see rendered output. Project `AG
 **The test:** each visual claim points at a shot in `checks.md`.
 
 ## 2. Tokens <!-- P1, R1 -->
-**Rule:** Approved `DESIGN.md` before pages (else fill and approve `DESIGN.template.md`: palette, type, fonts, spacing, radius, shadow, motion). Color, font, size, spacing, and radius trace to tokens; amend, don't smuggle. No `DESIGN.md` forbids gradients (`linear-gradient`), glassmorphism (`backdrop-filter`, translucent panels), emoji icons, drop shadows, hero+3 cards, floating. Adjectives: one question recommending a reference or amendment.
+**Rule:** Approved `DESIGN.md` before pages (else fill and approve `DESIGN.template.md`: palette, type, fonts, spacing, radius, shadow, motion). Color, font, size, spacing, and radius trace to tokens; amend, don't smuggle. No `DESIGN.md` forbids gradients (`linear-gradient`), glassmorphism (`backdrop-filter`, translucent panels), emoji icons, drop shadows, hero+3 feature cards, floating animations. Adjectives: one question recommending a reference or amendment.
 **Why:** mean page.
 **The test:** grep that list (zero hits, raw in `checks.md`) and name five tokens, or match `DESIGN.md`.
 

@@ -50,10 +50,10 @@ Bytes of the files an agent actually loads:
 | File | Bytes | Target |
 | --- | ---: | --- |
 | `SKILL.md` | 2054 | ~2KB |
-| `frontend.md` | 4104 | ~3–4KB |
+| `frontend.md` | 4123 | ~3–4KB |
 | `office.md` | 3970 | ~3–4KB |
 | `backend.md` | 4788 | ~3–4KB |
 | `testing.md` | 3600 | ~3–4KB |
 | `ops.md` | 3367 | ~3–4KB |
 
-`backend.md` is past 4KB. It holds twelve rules, each with a why and a test; cutting further dropped constraints. `SKILL.md` and `frontend.md` sit a few bytes over 2048 and 4096 so the headings stay separated.
+`backend.md` is past 4KB. It holds twelve rules, each with a why and a test; cutting further dropped constraints. `SKILL.md` is 6 bytes over 2048 so the headings stay separated. `frontend.md` is 27 bytes over 4096 for the same reason, and so the forbidden-list tokens stay `hero+3 feature cards` and `floating animations` rather than fragments that grep would misread.
